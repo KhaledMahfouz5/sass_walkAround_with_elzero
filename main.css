@@ -4,4 +4,32 @@
 
 .contact {
   padding: 20px;
+}
+
+/* Another Method :
+// @use 'sass/layout/variables/colors' as * ; -> To use It's Variables .. Just mention the variable ..
+.container{
+    color: $red-100;
+   background-color:$red-50;
+}
+*/
+.header {
+  color: darkgreen;
+  background-color: green;
+}
+
+.footer {
+  color: darkblue;
+  background-color: black;
+}
+
+.container {
+  color: darkred;
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 25px;
+  }
 }/*# sourceMappingURL=main.css.map */

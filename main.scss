@@ -2,4 +2,38 @@
 @use 'sass/layout/global-rules' ;
 // Import Contacts Rules 
 @use 'sass/layout/pages/contacts' ;
+// Import Color Variables 
+@use 'sass/layout/variables/colors' ;
+/* Another Method :
+// @use 'sass/layout/variables/colors' as * ; -> To use It's Variables .. Just mention the variable ..
+.container{
+    color: $red-100;
+   background-color:$red-50;
+}
+*/
 
+
+$main_color : green ;
+$dark_theme : darkgreen;
+$maxWidthForMobile : "800px" ;
+
+.header {
+    color: $dark_theme;
+    $dark_theme:darkblue !global ;
+    background-color: $main_color;
+}
+.footer {
+    $main_color:black;
+    color: $dark_theme;
+    background-color: $main_color;
+}
+.container{
+    color: colors.$red-100;
+   background-color:colors.$red-50;
+}
+
+@media (max-width:$maxWidthForMobile) {
+    .header{
+        padding:25px;
+    }    
+}
