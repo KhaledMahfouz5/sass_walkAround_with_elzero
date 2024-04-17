@@ -148,12 +148,20 @@
   border-right-color: red;
 }
 
-.ad-falcon-uadtayw {
+.ad-falcon-uadtb01 {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-uadtaz5 {
+.ad-uadtb08 {
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* This Comment Will Show In CSS File But Not In Compressed Mode */
+/*! This Comment Will Show In CSS File And In Compressed Mode */
+.box {
+  font-size: 20px;
+}
+
+/* This Comment Contains Interpolation => falcon *//*# sourceMappingURL=main.css.map */
