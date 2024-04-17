@@ -32,4 +32,67 @@
   .header {
     padding: 25px;
   }
+}
+.parent {
+  font-style: oblique;
+}
+.parent > .child-1 {
+  font-size: large;
+}
+.parent > .child-2 {
+  font-size: larger;
+}
+.parent .child {
+  font-weight: 200;
+}
+.parent .child .grandChild {
+  font-weight: 300;
+}
+.parent .child-2 {
+  font-size: small;
+}
+.parent + p {
+  text-align: center;
+}
+.parent + h3 {
+  color: rebeccapurple;
+}
+
+.parent > .child {
+  font-weight: 400;
+}
+
+.parent-2, .parent-3 {
+  font-display: initial;
+}
+[dir=rtl] .parent-2, [dir=rtl] .parent-3 {
+  padding: 20px;
+}
+.parent-2 [data-color=red] .child, .parent-3 [data-color=red] .child {
+  color: red;
+}
+.parent-2 .child, .parent-3 .child {
+  font-variant: small-caps;
+}
+.parent-2 .child > .grandChild, .parent-3 .child > .grandChild {
+  font-family: "Courier New", Courier, monospace;
+}
+.parent-2 ~ h5, .parent-3 ~ h5 {
+  color: green;
+}
+
+.box .title {
+  font-size: large;
+}
+.box .description {
+  font-size: medium;
+}
+.box.red {
+  color: red;
+}
+.box:hover {
+  color: green;
+}
+:not(.box):not(.title) {
+  font-weight: lighter;
 }/*# sourceMappingURL=main.css.map */

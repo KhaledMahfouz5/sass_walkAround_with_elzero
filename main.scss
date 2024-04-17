@@ -37,3 +37,74 @@ $maxWidthForMobile : "800px" ;
         padding:25px;
     }    
 }
+
+// Nesting And Parent Element
+.parent{
+    font-style: oblique;
+    >{
+        .child-1 {
+            font-size: large;
+        }
+        .child-2 {
+            font-size: larger;
+        }
+    }
+    .child {
+        font-weight: 200;
+        .grandChild{
+            font-weight: 300;
+        }
+    }
+    .child-2 {
+        font-size: small;
+    }
+    +{
+        p {
+            text-align: center;
+        }
+        h3 {
+            color: rebeccapurple;
+        }
+    }
+}
+
+.parent > .child {
+    font-weight: 400;
+}
+
+.parent-2 , .parent-3 {
+    font-display:initial;
+    [dir="rtl"] & {
+        padding: 20px;
+    }
+    [data-color="red"] .child {
+        color: red;
+    }
+    .child {
+        font-variant: small-caps;
+        >.grandChild {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    ~ h5 {
+        color: green;
+    }
+}
+
+.box {
+    .title {
+        font-size: large;
+    }
+    .description {
+        font-size: medium;
+    }
+    &.red {
+        color: red;
+    }
+    &:hover {
+        color: green;
+    }
+    :not(&):not(.title){
+        font-weight:lighter;
+    }
+}
