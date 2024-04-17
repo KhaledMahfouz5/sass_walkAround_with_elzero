@@ -95,4 +95,30 @@
 }
 :not(.box):not(.title) {
   font-weight: lighter;
+}
+
+.box {
+  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.article, .ads {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.ads {
+  font-size: 20px;
+  color: red;
+}
+
+.article {
+  font-size: 22px;
+  color: green;
 }/*# sourceMappingURL=main.css.map */
