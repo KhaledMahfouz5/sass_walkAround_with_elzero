@@ -148,13 +148,13 @@
   border-right-color: red;
 }
 
-.ad-falcon-uadtb01 {
+.ad-falcon-uadtb4m {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-uadtb08 {
+.ad-uadtb58 {
   font-weight: bold;
 }
 
@@ -164,4 +164,34 @@
   font-size: 20px;
 }
 
-/* This Comment Contains Interpolation => falcon *//*# sourceMappingURL=main.css.map */
+/* This Comment Contains Interpolation => falcon */
+ul.links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.circle-100 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+}
+
+.circle-200 {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+.center-circle {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

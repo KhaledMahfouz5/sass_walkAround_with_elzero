@@ -11,6 +11,7 @@
    background-color:$red-50;
 }
 */
+@use 'sass/helpers/mixins' as * ;
 
 
 $main_color : green ;
@@ -244,3 +245,27 @@ Comment */ {
 /// @param {num}
 /// The Number To Deal With
 /// @return {int}
+
+
+// Mixin And Include
+
+ul.links {
+  @include list-reset;
+}
+
+.circle-100 {
+  @include circle(100px);
+  background-color: red;
+  color: white;
+}
+
+.circle-200 {
+  @include circle(200px);
+  background-color: red;
+  color: white;
+}
+
+.center-circle {
+  @include circle(400px);
+  @include centering;
+}
