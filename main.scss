@@ -141,3 +141,70 @@ $maxWidthForMobile : "800px" ;
   @extend %main-box;
   color: green;
 }
+
+// Control Flow => If And Else
+
+$theme: "dark";
+
+.page {
+  @if $theme == "light" {
+    background-color: white;
+    color: #444;
+  } @else {
+    background-color: #444;
+    color: white;
+  }
+}
+
+$rounded: false;
+
+.box {
+  @extend %main-box;
+  border-radius: if($rounded, 6px, null);
+}
+
+$direction : "left";
+
+.arrow-div {
+  @extend %main-box;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 50px auto;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    @if $direction == "top" {
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom-color: red;
+    }
+    @else if $direction == "bottom" {
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-top-color: red;
+    }
+    @else if $direction == "right" {
+      right: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left-color: red;
+    }
+    @else if $direction == "left" {
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-right-color: red;
+    }
+    @else {
+        @error "undefined direction #{$direction}"
+    }
+  }
+}

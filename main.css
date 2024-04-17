@@ -107,7 +107,7 @@
   margin-bottom: 15px;
 }
 
-.article, .ads {
+.arrow-div, .box, .article, .ads {
   background-color: white;
   padding: 15px;
   border: 1px solid #ccc;
@@ -121,4 +121,29 @@
 .article {
   font-size: 22px;
   color: green;
+}
+
+.page {
+  background-color: #444;
+  color: white;
+}
+
+.arrow-div {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+}
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-color: red;
 }/*# sourceMappingURL=main.css.map */
