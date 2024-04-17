@@ -146,4 +146,14 @@
   top: 50%;
   transform: translateY(-50%);
   border-right-color: red;
+}
+
+.ad-falcon-uadtayw {
+  font-size: 20px;
+  background-image: url("imgs/falcon.png");
+  right: 0;
+}
+
+.ad-uadtaz5 {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
