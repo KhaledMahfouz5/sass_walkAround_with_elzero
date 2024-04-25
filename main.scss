@@ -285,3 +285,38 @@ ul.links {
     border-radius: 50%;
   }
 }
+
+// Each And Maps 
+
+$themeColors : red,green,blue,black ;
+@each $color in $themeColors {
+  .#{$color}-theme {
+    color: $color;
+    background-color: #ccc;
+    .product {
+      border-color: 2px solid $color;
+    }
+  }
+}
+
+$socialMedia:('facebook':blue,'github':black,'gitlab':orange,'youtube':red);
+@each $website , $color in $socialMedia {
+  .#{$website}-website {
+    color:$color;
+    &::before {
+      content: $website;
+    }
+  }
+}
+
+$classes: "First" red 1rem , "Second" green 2rem ,"Third" blue 3rem;
+@each $order , $color , $magnitude in $classes {
+.#{$order}-class {
+  &::before {
+    content: $order;
+  }
+  color: $color;
+  width: $magnitude;
+  height: $magnitude;
+}
+}

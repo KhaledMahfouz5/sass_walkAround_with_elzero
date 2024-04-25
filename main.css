@@ -148,13 +148,13 @@
   border-right-color: red;
 }
 
-.ad-falcon-uadtb65 {
+.ad-falcon-uqjl5wt {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-uadtb67 {
+.ad-uqjl5xc {
   font-weight: bold;
 }
 
@@ -294,4 +294,91 @@ ul.links {
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
+}
+
+.red-theme {
+  color: red;
+  background-color: #ccc;
+}
+.red-theme .product {
+  border-color: 2px solid red;
+}
+
+.green-theme {
+  color: green;
+  background-color: #ccc;
+}
+.green-theme .product {
+  border-color: 2px solid green;
+}
+
+.blue-theme {
+  color: blue;
+  background-color: #ccc;
+}
+.blue-theme .product {
+  border-color: 2px solid blue;
+}
+
+.black-theme {
+  color: black;
+  background-color: #ccc;
+}
+.black-theme .product {
+  border-color: 2px solid black;
+}
+
+.facebook-website {
+  color: blue;
+}
+.facebook-website::before {
+  content: "facebook";
+}
+
+.github-website {
+  color: black;
+}
+.github-website::before {
+  content: "github";
+}
+
+.gitlab-website {
+  color: orange;
+}
+.gitlab-website::before {
+  content: "gitlab";
+}
+
+.youtube-website {
+  color: red;
+}
+.youtube-website::before {
+  content: "youtube";
+}
+
+.First-class {
+  color: red;
+  width: 1rem;
+  height: 1rem;
+}
+.First-class::before {
+  content: "First";
+}
+
+.Second-class {
+  color: green;
+  width: 2rem;
+  height: 2rem;
+}
+.Second-class::before {
+  content: "Second";
+}
+
+.Third-class {
+  color: blue;
+  width: 3rem;
+  height: 3rem;
+}
+.Third-class::before {
+  content: "Third";
 }/*# sourceMappingURL=main.css.map */
