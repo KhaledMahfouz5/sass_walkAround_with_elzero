@@ -154,13 +154,13 @@
   border-right-color: red;
 }
 
-.ad-falcon-uqjl5yu {
+.ad-falcon-uqjl6d6 {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-uqjl5yy {
+.ad-uqjl6d8 {
   font-weight: bold;
 }
 
@@ -435,4 +435,10 @@ ul.links {
 
 .col-12 {
   width: 100%;
+}
+
+.ele {
+  width: 50px;
+  height: 100px;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -12,6 +12,7 @@
 }
 */
 @use "sass/helpers/mixins" as *;
+@use "sass/helpers/functions" as * ;
 
 $main_color: green;
 $dark_theme: darkgreen;
@@ -327,4 +328,13 @@ $grid_cols: 12;
   .col-#{$i} {
     width: percentage($i/$grid_cols);
   }
+}
+
+// Functions 
+$width : 100px;
+
+.ele {
+  width: half($width);
+  height: 2*half($width);
+  padding: max(1,20,3)*1px;
 }

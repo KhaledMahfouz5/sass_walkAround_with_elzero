@@ -1,0 +1,20 @@
+@function half($num){
+  @return $num /2;
+}
+
+@function sum($nums...){
+$total:0;
+@each $num in $nums {
+  $total:total+$num;
+}
+@return total ;
+}
+
+@function max($nums...){
+$result:0;
+@each $num in $nums {
+  @if ($num>$result)
+  {$result:$num}
+}
+@return $result;
+}
