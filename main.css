@@ -62,22 +62,28 @@
   font-weight: 400;
 }
 
-.parent-2, .parent-3 {
+.parent-2,
+.parent-3 {
   font-display: initial;
 }
-[dir=rtl] .parent-2, [dir=rtl] .parent-3 {
+[dir=rtl] .parent-2,
+[dir=rtl] .parent-3 {
   padding: 20px;
 }
-.parent-2 [data-color=red] .child, .parent-3 [data-color=red] .child {
+.parent-2 [data-color=red] .child,
+.parent-3 [data-color=red] .child {
   color: red;
 }
-.parent-2 .child, .parent-3 .child {
+.parent-2 .child,
+.parent-3 .child {
   font-variant: small-caps;
 }
-.parent-2 .child > .grandChild, .parent-3 .child > .grandChild {
+.parent-2 .child > .grandChild,
+.parent-3 .child > .grandChild {
   font-family: "Courier New", Courier, monospace;
 }
-.parent-2 ~ h5, .parent-3 ~ h5 {
+.parent-2 ~ h5,
+.parent-3 ~ h5 {
   color: green;
 }
 
@@ -148,13 +154,13 @@
   border-right-color: red;
 }
 
-.ad-falcon-uqjl5wt {
+.ad-falcon-uqjl5yu {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-uqjl5xc {
+.ad-uqjl5yy {
   font-weight: bold;
 }
 
@@ -381,4 +387,52 @@ ul.links {
 }
 .Third-class::before {
   content: "Third";
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
