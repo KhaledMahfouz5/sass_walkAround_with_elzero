@@ -353,3 +353,19 @@ $width : 100px;
   from{opacity: 0;}
   to{opacity: 1;}
 }
+
+// If Condition + Mixin + Content
+.media {
+  @include breakpoints(mobile) {
+    font-size: 15px;
+  }
+  @include breakpoints(small) {
+    font-size: 18px;
+  }
+  @include breakpoints(medium) {
+    font-size: 20px;
+  }
+  @include breakpoints(large) {
+    font-size: 22px;
+  }
+}

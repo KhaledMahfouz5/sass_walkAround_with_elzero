@@ -154,13 +154,13 @@
   border-right-color: red;
 }
 
-.ad-falcon-ui4ylzx {
+.ad-falcon-ui4ym7b {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-ui4ym0m {
+.ad-ui4ym7v {
   font-weight: bold;
 }
 
@@ -466,5 +466,25 @@ ul.links {
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .media {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .media {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .media {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .media {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=main.css.map */
