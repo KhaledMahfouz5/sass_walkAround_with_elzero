@@ -338,3 +338,18 @@ $width : 100px;
   height: 2*half($width);
   padding: max(1,20,3)*1px;
 }
+
+// Mixin With Content
+.black-overlay {
+  @include overlay(black,0.5);
+}
+
+@include keyframe(fadeIn){
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+
+@include keyframe(fadeOut){
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
