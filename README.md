@@ -25,3 +25,10 @@
 - HTML
 - CSS
 - JavaScript [Fundamentals Of Programming]
+
+
+#### Sass Mixins
+- https://github.com/7ninjas/scss-mixins
+- https://github.com/drublic/Sass-Mixins
+- https://github.com/yannickcr/Sass-mixins
+- https://github.com/huanz/mixins
