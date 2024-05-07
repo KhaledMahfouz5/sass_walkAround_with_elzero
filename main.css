@@ -154,13 +154,13 @@
   border-right-color: red;
 }
 
-.ad-falcon-ui4ym7b {
+.ad-falcon-u69zcf1 {
   font-size: 20px;
   background-image: url("imgs/falcon.png");
   right: 0;
 }
 
-.ad-ui4ym7v {
+.ad-u69zcfz {
   font-weight: bold;
 }
 
@@ -460,7 +460,23 @@ ul.links {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
   from {
     opacity: 0;
   }
@@ -487,4 +503,6 @@ ul.links {
   .media {
     font-size: 22px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
